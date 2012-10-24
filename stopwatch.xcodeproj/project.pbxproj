@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		319FDD8416389DD5009254F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319FDD8316389DD5009254F8 /* Cocoa.framework */; };
-		319FDD8616389DD5009254F8 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319FDD8516389DD5009254F8 /* MacRuby.framework */; };
+		319FDD8616389DD5009254F8 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319FDD8516389DD5009254F8 /* MacRuby.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		319FDD8F16389DD5009254F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 319FDD8D16389DD5009254F8 /* InfoPlist.strings */; };
-		319FDD9116389DD5009254F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FDD9016389DD5009254F8 /* main.m */; };
 		319FDD9616389DD5009254F8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319FDD9416389DD5009254F8 /* MainMenu.xib */; };
 		319FDD9916389DD5009254F8 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 319FDD9816389DD5009254F8 /* rb_main.rb */; };
 		319FDD9B16389DD5009254F8 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 319FDD9A16389DD5009254F8 /* AppDelegate.rb */; };
+		319FDDA41638A281009254F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 319FDD9016389DD5009254F8 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				319FDD9116389DD5009254F8 /* main.m in Sources */,
+				319FDDA41638A281009254F8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +291,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"/Library/Frameworks/**",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -308,6 +309,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"/Library/Frameworks/**",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
